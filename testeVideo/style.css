@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    font-family: "Rubik Glitch",sans-serif;
+    color: white;
+}
+
+
+.home video{
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.home div{
+    position: relative;
+    z-index: 1;
+}
+
+.nav-bar{
+    background-image: radial-gradient(circle at 116.45% 25.82%, #00445e 0, #123d55 8.33%, #1a3449 16.67%, #1d2b3c 25%, #1c222e 33.33%, #17191f 41.67%, #0e0e0d 50%, #000000 58.33%, #000000 66.67%, #000000 75%, #000000 83.33%, #000000 91.67%, #000000 100%);
+    height: 120px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0px 0px 90px 90px;
+}
+
+.logo h1{
+    color: white;
+    text-align: left;
+    width: 180px;
+    padding: 10px;
+    padding-left: 50px;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.home span{
+    color: white;
+    text-align: left;
+    width: 170px;
+    padding: 10px;
+    padding-left: 50px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.itens{
+    padding: 10px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.nav-icon{
+    padding: 10px;
+    padding-right: 30px;
+}
+
+.nav-input{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: fit-content;
+}
+
+.pesquisa{
+    border: none;
+    border-radius: 15px;
+    width: 30vh;
+    height: 3vh;
+    padding: 10px;
+    background-image: radial-gradient(circle at 116.45% 25.82%, #00445e 0, #123d55 8.33%, #1a3449 16.67%, #1d2b3c 25%, #1c222e 33.33%, #17191f 41.67%, #0e0e0d 50%, #000000 58.33%, #000000 66.67%, #000000 75%, #000000 83.33%, #000000 91.67%, #000000 100%);
+    color: white;
+    font-size: medium;
+}
+
+.pesquisa-botao{
+    width: fit-content;
+    height: 4vh;
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #000000;
+    font-family: "Rubik Glitch",sans-serif;
+    color: white;
+}
+
+.pesquisa-botao:hover{
+    animation: shake 0.3s ease-in-out;
+    color: #03b7ff;
+}
+.icon{
+    width: 100px;
+}
+
+.logo{
+    position: relative;
+    display: inline-block;
+}
+
+.icon-logo{
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20%;
+    font-weight: 600;
+    font-weight: lighter;
+}
+
+.item:hover{
+    color: #03b7ff;
+    cursor: pointer;
+    animation: shake 0.3s ease-in-out;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+.recomend{
+
+    width: 150vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 0px 30px 0px;
+}
+
+.recomend h1{
+    font-size: 60px;
+    font-weight: lighter;
+    background-image: radial-gradient(circle at 116.45% 25.82%, #00445e 0, #123d55 8.33%, #1a3449 16.67%, #1d2b3c 25%, #1c222e 33.33%, #17191f 41.67%, #0e0e0d 50%, #000000 58.33%, #000000 66.67%, #000000 75%, #000000 83.33%, #000000 91.67%, #000000 100%);
+    padding: 20px;
+    border-radius: 10px 90px 10px 90px;
+    width: 20vw;
+    text-align: center;
+    margin: auto;
+    height: fit-content;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.filmes{
+    background-color: rgba(20, 19, 19, 0.7);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+    gap: 20px;
+}
+
+.panico , .barbie , .oppenheimer , .mario, .wonka , .spider-man{
+    display: flex;
+    padding: 20px;
+    padding-bottom: 30px;
+    height: 300px;
+    background-image: radial-gradient(circle at 116.45% 25.82%, #00445e 0, #123d55 8.33%, #1a3449 16.67%, #1d2b3c 25%, #1c222e 33.33%, #17191f 41.67%, #0e0e0d 50%, #000000 58.33%, #000000 66.67%, #000000 75%, #000000 83.33%, #000000 91.67%, #000000 100%);
+    border-radius: 30px;
+}
+
+.filmes label{
+    text-align: left;
+    padding: 20px;
+}
+
+.titulo{
+    font-size: 30px;
+}
+
+.sinopse{
+    font-size: 20px;
+    max-height: 275px;
+    min-width: 400px;
+}
+
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(5px);
+    }
+  }
+
+.assistir{
+    width: fit-content;
+}
+
+.assistir:hover{
+    color: #03b7ff;
+    animation: shake 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.legenda{
+    display: grid;
+}
+
+.img-filme{
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+}
